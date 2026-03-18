@@ -27,3 +27,6 @@ module ImmGen (
   end
 
 endmodule
+
+// immediate generation is the process of sign extension taht we are about to receive.
+// we will use the opcode, which we will recceive from instruction[6:0]
