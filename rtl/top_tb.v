@@ -12,6 +12,7 @@ module top_tb();
     for(i=0; i<64; i=i+1) DUT.inst_mem.mem[i] = 32'b0;
 
     //valid instruction 
+   $readmeh("../sw/c_fised.hex",DUT.inst_mem.mem);
   end
 
   initial begin
