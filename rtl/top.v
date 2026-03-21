@@ -46,7 +46,7 @@ module top(
   control_unit ctrl_unit(.opcode(instruction_top[6:0]),.JALr_en(JALr_en_top), .AUIPC_en(AUIPC_en_top), .JAL_en(JAL_en_top), .LUI_en(LUI_en_top), .Branch(Branch_top), .MemRead(MemRead_top) );
 
 // immediate generator
-  ImmGen Imm( .opcode(instruction_top[6:0]), .instruction(instruction_top), .ImmExt(ImmExt_top) );
+  imm_gen Imm( .opcode(instruction_top[6:0]), .instruction(instruction_top), .ImmExt(ImmExt_top) );
 
   // mux A  -- RD1 and AUIPC(pc) 
   mux pc_sel_mux_U( .sel(AUIPC_en_top), .A(RD1_top), .B(PC_top), .mux_out(pc_sel_mux_out) );
