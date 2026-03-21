@@ -4,7 +4,7 @@
 `include "control_unit.v"
 `include "data_mem.v"
 `include "gatelogic.v"
-`include "ImmGen.v"
+`include "imm_gen.v"
 `include "instruction_mem.v"
 `include "mux.v"
 `include "PC_inc.v"
