@@ -64,6 +64,8 @@ RISC_V/
 
 This is a **single-cycle** implementation, meaning every instruction — from fetch to write-back — completes within a single clock cycle. The datapath follows the classic 5-stage RISC-V flow, collapsed into one cycle:
 
+( Proper Detailed Diagram will be uploaded soon )
+
 ```
         ┌─────────────────────────────────────────────────────────────────┐
         │                                                                 │
