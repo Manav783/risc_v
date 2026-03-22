@@ -1,4 +1,4 @@
-module ImmGen (
+module imm_gen (
   input  [6:0] opcode,
   input  [31:0] instructions,
   output reg [31:0] ImmExt
